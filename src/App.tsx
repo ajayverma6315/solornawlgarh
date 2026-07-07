@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Stats from './components/Stats';
 import Brands from './components/Brands';
+import ContactForm from './components/ContactForm';
 import Services from './components/Services';
 import Calculator from './components/Calculator';
 import Financing from './components/Financing';
@@ -30,6 +31,7 @@ export default function App() {
         <Hero />
         <Stats />
         <Brands />
+        <ContactForm />
         <Services />
         <Calculator />
         <Financing />
