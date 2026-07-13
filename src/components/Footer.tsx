@@ -1,4 +1,5 @@
 import { Sun, Facebook, Instagram, Twitter, MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -23,11 +24,11 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-white mb-6 text-lg">Quick Links</h4>
             <ul className="space-y-3">
-              <li><a href="#services" className="text-slate-400 hover:text-emerald-400 font-medium transition-colors">Our Services</a></li>
-              <li><a href="#subsidy" className="text-slate-400 hover:text-emerald-400 font-medium transition-colors">PM Surya Ghar Yojana</a></li>
-              <li><a href="#projects" className="text-slate-400 hover:text-emerald-400 font-medium transition-colors">Recent Projects</a></li>
-              <li><a href="#reviews" className="text-slate-400 hover:text-emerald-400 font-medium transition-colors">Customer Reviews</a></li>
-              <li><a href="#faq" className="text-slate-400 hover:text-emerald-400 font-medium transition-colors">FAQ</a></li>
+              <li><a href="/#services" className="text-slate-400 hover:text-emerald-400 font-medium transition-colors">Our Services</a></li>
+              <li><a href="/#subsidy" className="text-slate-400 hover:text-emerald-400 font-medium transition-colors">PM Surya Ghar Yojana</a></li>
+              <li><a href="/#projects" className="text-slate-400 hover:text-emerald-400 font-medium transition-colors">Recent Projects</a></li>
+              <li><a href="/#reviews" className="text-slate-400 hover:text-emerald-400 font-medium transition-colors">Customer Reviews</a></li>
+              <li><a href="/#contact" className="text-slate-400 hover:text-emerald-400 font-medium transition-colors">Contact Us</a></li>
             </ul>
           </div>
 
@@ -69,8 +70,8 @@ export default function Footer() {
         <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-4 text-slate-500 text-sm">
           <p>&copy; {new Date().getFullYear()} Solar Nawalgarh. All rights reserved.</p>
           <div className="flex gap-6">
-            <a href="#" className="hover:text-emerald-400 transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-emerald-400 transition-colors">Terms of Service</a>
+            <Link to="/privacy-policy" className="hover:text-emerald-400 transition-colors">Privacy Policy</Link>
+            <Link to="/privacy-policy" className="hover:text-emerald-400 transition-colors">Terms of Service</Link>
           </div>
         </div>
       </div>
